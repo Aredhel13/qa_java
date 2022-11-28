@@ -1,25 +1,23 @@
 package animalTests;
 
-import com.example.Cat;
 import com.example.Lion;
 import com.example.Predator;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
-import org.mockito.Mock;
 import org.mockito.Mockito;
 
 import java.util.Arrays;
 import java.util.List;
 
 @RunWith(Parameterized.class)
-public class LionTests{
+public class LionTest {
 
     static Predator feline = Mockito.mock(Predator.class);
     Lion lion;
 
-    public LionTests(Lion lion){
+    public LionTest(Lion lion){
         this.lion = lion;
     }
 
